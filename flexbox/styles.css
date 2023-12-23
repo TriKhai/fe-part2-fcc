@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+/* vd về box-sizing:  content-box/border-box; */
+/* .gallery {
+    border: 5px solid red;
+    width: 50%;
+  }
+  
+img {
+    width: 100%;
+    border: 5px solid blue;
+    padding: 5px;
+} */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f5f6f7;
+}
+  
+.header {
+    /* căn giữa nội dung */
+    text-align: center;
+
+    /* in đậm chữ */
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+  
+.gallery {
+    display: flex;
+    /* hướng chính là trái sang phải */
+    flex-direction: row;
+     
+    /* tự xuống dòng khi tràn */ 
+    flex-wrap: wrap;
+
+    /* căn chỉnh ra giữa */
+    justify-content: center;
+    align-items: center;
+
+    /* các ảnh cách nhau 16px */
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+  
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+
+    /* làm cho ảnh phủ hết phần tử */
+    object-fit: cover;
+
+    /* bo góc ảnh */
+    border-radius: 10px;
+}
+  
+.gallery::after {
+    content: "";
+    width: 350px;
+}
+
+/* Flex Container (display: flex; trên phần tử cha):
+
+Các phần tử con của nó trở thành các phần tử Flex Item.
+Các phần tử con sẽ được xếp sắp tự động theo hướng mặc định từ trái sang phải.
+Thuộc tính trên Flex Container (display: flex;):
+
+flex-direction: Xác định hướng xếp của các phần tử con (row, row-reverse, column, column-reverse).
+flex-wrap: Quyết định liệu các phần tử con có nên xuống dòng khi không đủ không gian hay không (nowrap, wrap, wrap-reverse).
+justify-content: Điều chỉnh căn chỉnh của các phần tử theo chiều chính của container.
+align-items: Căn chỉnh các phần tử theo chiều chính của container.
+align-content: Chỉnh căn chỉnh của các dòng khi có nhiều dòng trong container.
+Thuộc tính trên Flex Items (Các phần tử con):
+
+order: Điều chỉnh thứ tự hiển thị của phần tử.
+flex-grow: Xác định tỷ lệ mà một phần tử sẽ mở rộng so với các phần tử còn lại.
+flex-shrink: Xác định tỷ lệ mà một phần tử sẽ co lại khi không đủ không gian.
+flex-basis: Xác định kích thước ban đầu của một phần tử trước khi nó mở rộng hoặc co lại.
+align-self: Chỉnh căn chỉnh của một phần tử cụ thể trong chiều chính của container.
+Chú ý:
+
+Flexbox là một mô hình linh hoạt và mạnh mẽ cho việc bố trí và căn chỉnh phần tử trong một container.
+Thường được sử dụng để thiết kế giao diện dạng dòng (layout) và căn chỉnh các phần tử một cách dễ dàng. */
