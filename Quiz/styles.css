@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+}
+
+#logo {
+    width: max(100px, 18vw);
+    background-color: #0a0a23;
+    padding: 0.4rem;
+    aspect-ratio: 35/4;
+}
+
+nav {
+    width: 50%;
+    height: 50px;
+    max-width: 300px;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+nav > ul > li {
+    color: #dfdfe2;
+    display: block;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+}
+
+nav > ul >li:hover {
+    /* background-color: #dfdfe2; */
+    color: #f1be32;
+    cursor: pointer;
+}
+
+li > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
+main{
+    padding-top: 50px;
+}
+
+section {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 10px auto;
+}
+
+h1, h2 {
+    font-family:  Verdana, Tahoma;
+}
+
+h2 {
+    border-bottom: 4px solid #dfdfe2;
+    padding-top: 60px;
+}
+
+.info {
+    padding: 10px 0 0 5px;
+}
+
+.formnow {
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+/* SECTION 1 */
+input {
+    font-size: 16px;
+}
+
+.info input {
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+}
+
+.info label {
+    width: 10%;
+    min-width: 55px;
+    display: inline-block;
+    text-align: right;
+}
+
+/* SECTION 2 */
+.question-block {
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
+.question {
+    border: none;
+    padding-left: 15px;
+}
+
+p {
+    margin-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+p::before {
+    content: "Question #";
+}
+
+.list-style-none {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.padd {
+    padding: 0 0 5px 0;
+}
+
+button {
+    display: block;
+    margin: 40px auto;
+    width: 40%;
+    padding: 15px;
+    font-size: 21px;
+    border: 3px solid #3b3b4f;
+    background: #d0d0d5;
+}
+
+footer {
+    background-color: #2a2a40;
+    display: flex;
+    justify-content: center;
+}
+
+footer, footer a{
+    color: #dfdfe2;
+}
+
+address {
+    text-align: center;
+    padding: 0.3em;
+}
